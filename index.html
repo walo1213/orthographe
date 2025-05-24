@@ -128,6 +128,7 @@
             padding: 20px;
             border-radius: 12px;
             animation: slideIn 0.4s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
         @keyframes slideIn {
@@ -138,35 +139,66 @@
         .feedback.correct {
             background: #d4edda;
             color: #155724;
-            border: 1px solid #c3e6cb;
+            border: 2px solid #28a745;
         }
 
         .feedback.incorrect {
             background: #f8d7da;
             color: #721c24;
-            border: 1px solid #f5c6cb;
+            border: 2px solid #dc3545;
         }
 
         .feedback h3 {
             margin-bottom: 10px;
-            font-size: 20px;
+            font-size: 24px;
+            font-weight: 700;
         }
 
         .feedback .correct-word {
-            font-size: 22px;
-            font-weight: 700;
-            margin: 10px 0;
+            font-size: 28px;
+            font-weight: 800;
+            margin: 15px 0;
             color: #2c3e50;
+            background: rgba(255,255,255,0.8);
+            padding: 10px;
+            border-radius: 8px;
+            display: inline-block;
         }
 
         .feedback .explanation {
-            font-size: 16px;
-            line-height: 1.5;
+            font-size: 18px;
+            line-height: 1.6;
             margin-top: 15px;
             text-align: left;
-            background: rgba(255,255,255,0.5);
-            padding: 12px;
+            background: rgba(255,255,255,0.7);
+            padding: 15px;
             border-radius: 8px;
+            font-weight: 500;
+        }
+
+        .user-answer {
+            font-size: 20px;
+            margin: 10px 0;
+            font-weight: 600;
+        }
+
+        .continue-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .continue-btn:hover {
+            background: #218838;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
         }
 
         .end-screen {
@@ -669,6 +701,7 @@
             const feedbackDiv = document.getElementById('feedback');
             
             document.getElementById('submit-btn').disabled = true;
+            document.getElementById('answer').disabled = true;
             
             if (userAnswer === correctAnswer) {
                 score++;
@@ -677,24 +710,27 @@
                     <h3>✅ Excellent !</h3>
                     <div class="correct-word">${currentWords[currentWordIndex].word}</div>
                     <div class="explanation">${currentWords[currentWordIndex].explanation}</div>
+                    <button class="continue-btn" onclick="nextWord()">Continuer →</button>
                 `;
             } else {
                 feedbackDiv.className = 'feedback incorrect';
                 feedbackDiv.innerHTML = `
                     <h3>❌ Pas tout à fait...</h3>
-                    <div>Vous avez écrit : <strong>${userAnswer}</strong></div>
+                    <div class="user-answer">Vous avez écrit : <strong>${userAnswer || "(vide)"}</strong></div>
                     <div class="correct-word">Réponse : ${currentWords[currentWordIndex].word}</div>
                     <div class="explanation">${currentWords[currentWordIndex].explanation}</div>
+                    <button class="continue-btn" onclick="nextWord()">Continuer →</button>
                 `;
             }
             
             document.getElementById('score').textContent = score;
             document.getElementById('total').textContent = currentWordIndex + 1;
-            
-            setTimeout(() => {
-                currentWordIndex++;
-                loadWord();
-            }, 3500);
+        }
+
+        function nextWord() {
+            currentWordIndex++;
+            document.getElementById('answer').disabled = false;
+            loadWord();
         }
 
         function endGame() {
