@@ -229,7 +229,7 @@
     </div>
 
     <script>
-        // Base de données de mots difficiles avec phrases et explications
+        // Base de données de 70 mots difficiles avec phrases et explications
         const wordsDatabase = [
             {
                 word: "accueil",
@@ -247,54 +247,14 @@
                 explanation: "Avec deux M, pas de N. Du grec 'di' (deux) et 'lemma' (proposition)."
             },
             {
-                word: "parallèle",
-                phrase: "Ces deux lignes ne se croiseront jamais.",
-                explanation: "Double L au milieu. Attention à l'accent grave sur le E."
-            },
-            {
                 word: "développement",
                 phrase: "La croissance économique s'accélère dans cette région.",
                 explanation: "Double P, un seul L. Verbe développer + suffixe -ment."
             },
             {
-                word: "commissaire",
-                phrase: "L'officier de police dirige l'enquête criminelle.",
-                explanation: "Double M et double S. Du latin 'commissarius'."
-            },
-            {
-                word: "nécessaire",
-                phrase: "Il est indispensable d'avoir ces documents pour voyager.",
-                explanation: "Un C puis double S. Du latin 'necessarius'."
-            },
-            {
-                word: "appartement",
-                phrase: "Le logement se situe au troisième étage de l'immeuble.",
-                explanation: "Double P et un seul R. Dérivé du verbe appartenir."
-            },
-            {
-                word: "ressource",
-                phrase: "Les moyens financiers de l'entreprise sont limités.",
-                explanation: "Double S au début, un seul C. Du verbe latin 'resurgere'."
-            },
-            {
-                word: "bizarre",
-                phrase: "Cette situation est vraiment étrange et inhabituelle.",
-                explanation: "Un seul R, deux R serait une erreur. De l'italien 'bizzarro'."
-            },
-            {
-                word: "échalote",
-                phrase: "Ce condiment relève délicatement la sauce.",
-                explanation: "Un seul T à la fin, pas deux. Du latin 'ascalonia'."
-            },
-            {
-                word: "aéroport",
-                phrase: "Les avions décollent et atterrissent à cet endroit.",
-                explanation: "A-É avec accent aigu. Composé de aéro- et port."
-            },
-            {
-                word: "antérieur",
-                phrase: "Cet événement s'est produit avant celui dont nous parlons.",
-                explanation: "Avec UN T au début. Du latin 'anterior'."
+                word: "embarrasser",
+                phrase: "Cette situation gênante le met mal à l'aise.",
+                explanation: "Double R et double S. De l'italien 'imbarazzare'."
             },
             {
                 word: "bibliothèque",
@@ -307,64 +267,9 @@
                 explanation: "Sans D à la fin. Du picard 'cauquemare'."
             },
             {
-                word: "chauffe-eau",
-                phrase: "Cet appareil produit l'eau chaude de la maison.",
-                explanation: "Avec trait d'union, eau au singulier. Mot composé invariable."
-            },
-            {
-                word: "comptable",
-                phrase: "Ce professionnel gère les finances de l'entreprise.",
-                explanation: "Avec un P muet. Du verbe compter."
-            },
-            {
                 word: "consensus",
                 phrase: "Tout le monde est d'accord sur cette décision.",
                 explanation: "Avec un S à la fin, pas X. Du latin 'consensus'."
-            },
-            {
-                word: "cueillir",
-                phrase: "Il faut ramasser les fruits quand ils sont mûrs.",
-                explanation: "U-E-I, ordre inhabituel. Famille de accueil, recueil."
-            },
-            {
-                word: "définitivement",
-                phrase: "Cette décision est prise de manière irrévocable.",
-                explanation: "Avec un seul F au début. De définitif + -ment."
-            },
-            {
-                word: "délai",
-                phrase: "Le temps imparti pour finir ce travail est court.",
-                explanation: "Sans S à la fin au singulier. Du verbe délayer."
-            },
-            {
-                word: "diagnostic",
-                phrase: "Le médecin a identifié la maladie du patient.",
-                explanation: "Avec C final, pas -que. Du grec 'diagnosis'."
-            },
-            {
-                word: "diarrhée",
-                phrase: "Ce trouble intestinal nécessite une consultation médicale.",
-                explanation: "Double R et H. Du grec 'diarrhoia'."
-            },
-            {
-                word: "différemment",
-                phrase: "Il faut procéder autrement pour réussir.",
-                explanation: "Double F, É, double M. De différent + -ment."
-            },
-            {
-                word: "dilemme",
-                phrase: "Le choix entre ces deux options est cornélien.",
-                explanation: "Deux M, pas de N. Du grec 'dilemma'."
-            },
-            {
-                word: "discipline",
-                phrase: "La rigueur et l'ordre sont essentiels dans ce domaine.",
-                explanation: "S-C-I, pas de Y. Du latin 'disciplina'."
-            },
-            {
-                word: "dissoudre",
-                phrase: "Le sucre disparaît complètement dans l'eau chaude.",
-                explanation: "Double S, pas de L. Du latin 'dissolvere'."
             },
             {
                 word: "écureuil",
@@ -372,74 +277,9 @@
                 explanation: "U-E-U-I-L, ordre complexe. Famille de feuille, seuil."
             },
             {
-                word: "embarrasser",
-                phrase: "Cette situation gênante le met mal à l'aise.",
-                explanation: "Double R et double S. De l'italien 'imbarazzare'."
-            },
-            {
-                word: "emmener",
-                phrase: "Il faut conduire les enfants à l'école.",
-                explanation: "Double M au début. Préfixe em- + mener."
-            },
-            {
-                word: "ennui",
-                phrase: "Cette sensation de lassitude l'envahit souvent.",
-                explanation: "Double N au début. Du verbe ennuyer."
-            },
-            {
-                word: "enveloppe",
-                phrase: "Le courrier est placé dans ce contenant en papier.",
-                explanation: "Un N, double P. Du verbe envelopper."
-            },
-            {
-                word: "équilibre",
-                phrase: "La stabilité est essentielle pour ne pas tomber.",
-                explanation: "É avec accent aigu, QU. Du latin 'aequilibrium'."
-            },
-            {
                 word: "essentiel",
                 phrase: "Cet élément est absolument indispensable.",
                 explanation: "Double S, T-I-E-L. Du latin 'essentialis'."
-            },
-            {
-                word: "étymologie",
-                phrase: "L'origine et l'histoire des mots est fascinante.",
-                explanation: "É accent aigu, Y au milieu. Du grec 'etymologia'."
-            },
-            {
-                word: "exaucer",
-                phrase: "Le génie a réalisé tous ses vœux.",
-                explanation: "Avec AU, pas A seul. Du latin 'exaudire'."
-            },
-            {
-                word: "excellent",
-                phrase: "Ce travail est vraiment remarquable et parfait.",
-                explanation: "E-X-C, double L. Du latin 'excellens'."
-            },
-            {
-                word: "excès",
-                phrase: "Il ne faut pas abuser des bonnes choses.",
-                explanation: "E-X-C, accent grave. Du latin 'excessus'."
-            },
-            {
-                word: "exercice",
-                phrase: "Cette activité physique est bonne pour la santé.",
-                explanation: "E-X-E, avec C. Du latin 'exercitium'."
-            },
-            {
-                word: "exhaustif",
-                phrase: "Cette liste complète ne laisse rien de côté.",
-                explanation: "E-X-H avec H muet. Du latin 'exhaustus'."
-            },
-            {
-                word: "exiger",
-                phrase: "Il faut demander fermement le respect des règles.",
-                explanation: "Avec G devant E. Du latin 'exigere'."
-            },
-            {
-                word: "fasciner",
-                phrase: "Ce spectacle captive complètement l'attention.",
-                explanation: "S-C, pas double S. Du latin 'fascinare'."
             },
             {
                 word: "fuchsia",
@@ -447,54 +287,9 @@
                 explanation: "F-U-C-H-S-I-A, orthographe complexe. Du botaniste Fuchs."
             },
             {
-                word: "fusil",
-                phrase: "Cette arme de chasse est rangée dans l'armoire.",
-                explanation: "Un seul L à la fin. Du latin 'focile'."
-            },
-            {
-                word: "gageure",
-                phrase: "Ce défi semble impossible à relever.",
-                explanation: "G-A-G-E-U-R-E, se prononce 'gajure'. Du verbe gager."
-            },
-            {
-                word: "garantie",
-                phrase: "Cette assurance protège l'acheteur pendant deux ans.",
-                explanation: "I-E à la fin, pas juste I. Du verbe garantir."
-            },
-            {
-                word: "gens",
-                phrase: "Ces personnes attendent patiemment leur tour.",
-                explanation: "Avec S même au singulier. Du latin 'gens'."
-            },
-            {
-                word: "gentil",
-                phrase: "Cette personne aimable fait toujours preuve de bonté.",
-                explanation: "Un seul L au masculin. Du latin 'gentilis'."
-            },
-            {
                 word: "graffiti",
                 phrase: "Ces dessins sur les murs sont parfois artistiques.",
                 explanation: "Double F, double T. De l'italien 'graffiti'."
-            },
-            {
-                word: "groseille",
-                phrase: "Cette petite baie rouge pousse dans le jardin.",
-                explanation: "E-I-double L-E. D'origine germanique."
-            },
-            {
-                word: "gymnastique",
-                phrase: "Ce sport développe la souplesse et la force.",
-                explanation: "G-Y-M avec Y. Du grec 'gymnastikê'."
-            },
-            {
-                word: "hasard",
-                phrase: "Le sort et la chance jouent un rôle important.",
-                explanation: "H muet, S et non Z. De l'arabe 'az-zahr'."
-            },
-            {
-                word: "hémorragie",
-                phrase: "Cette perte de sang importante nécessite des soins urgents.",
-                explanation: "H au début, double R. Du grec 'haimorrhagia'."
             },
             {
                 word: "hétérogène",
@@ -502,224 +297,14 @@
                 explanation: "H muet, deux accents graves. Du grec 'heterogenês'."
             },
             {
-                word: "hippopotame",
-                phrase: "Ce gros mammifère vit dans les rivières africaines.",
-                explanation: "H-I-double P-O. Du grec 'hippopotamos'."
-            },
-            {
-                word: "homogène",
-                phrase: "Ce mélange uniforme ne présente aucune différence.",
-                explanation: "H muet au début. Du grec 'homogenês'."
-            },
-            {
-                word: "honnête",
-                phrase: "Cette personne intègre dit toujours la vérité.",
-                explanation: "H muet, double N, Ê. Du latin 'honestus'."
-            },
-            {
-                word: "honneur",
-                phrase: "La dignité et la réputation sont importantes.",
-                explanation: "H muet, double N. Du latin 'honor'."
-            },
-            {
-                word: "hôpital",
-                phrase: "Les malades sont soignés dans cet établissement.",
-                explanation: "Ô avec circonflexe. Du latin 'hospitale'."
-            },
-            {
                 word: "hypothèse",
                 phrase: "Cette supposition reste à vérifier par l'expérience.",
                 explanation: "H-Y-P-O, TH, È. Du grec 'hypothesis'."
             },
             {
-                word: "illusion",
-                phrase: "Cette perception trompeuse déforme la réalité.",
-                explanation: "Double L au début. Du latin 'illusio'."
-            },
-            {
-                word: "immédiatement",
-                phrase: "Il faut agir tout de suite, sans attendre.",
-                explanation: "Double M au début. De immédiat + -ment."
-            },
-            {
-                word: "immobile",
-                phrase: "Cette statue ne bouge absolument pas.",
-                explanation: "Double M au début. Préfixe im- + mobile."
-            },
-            {
-                word: "impatient",
-                phrase: "Cette personne nerveuse ne sait pas attendre.",
-                explanation: "I-M avec un seul M. Préfixe im- + patient."
-            },
-            {
-                word: "incognito",
-                phrase: "Il voyage sous une fausse identité pour passer inaperçu.",
-                explanation: "C-O-G-N-I, pas de Y. De l'italien 'incognito'."
-            },
-            {
-                word: "indépendamment",
-                phrase: "Chacun agit de façon autonome, sans lien avec les autres.",
-                explanation: "I-N-D-É, double M à la fin. De indépendant + -ment."
-            },
-            {
-                word: "innocent",
-                phrase: "Cette personne n'a commis aucune faute.",
-                explanation: "Double N, un seul C. Du latin 'innocens'."
-            },
-            {
-                word: "intelligemment",
-                phrase: "Il agit avec beaucoup de sagesse et de réflexion.",
-                explanation: "E devant double M. De intelligent + -ment."
-            },
-            {
-                word: "intéresser",
-                phrase: "Ce sujet captive vraiment mon attention.",
-                explanation: "Un seul R après É. Du latin 'interesse'."
-            },
-            {
-                word: "irrésistible",
-                phrase: "Cette tentation est impossible à repousser.",
-                explanation: "Double R au début, S-I-S. Préfixe ir- + résistible."
-            },
-            {
-                word: "jaillir",
-                phrase: "L'eau surgit avec force de la source.",
-                explanation: "J-A-I-double L-I-R. Origine onomatopéique."
-            },
-            {
-                word: "jaloux",
-                phrase: "Il envie le succès de son voisin.",
-                explanation: "Un seul L, O-U-X. Du latin 'zelosus'."
-            },
-            {
-                word: "jusqu'à",
-                phrase: "Il faut continuer pour atteindre le but final.",
-                explanation: "Apostrophe obligatoire, accent grave sur À."
-            },
-            {
-                word: "labyrinthe",
-                phrase: "Ce dédale de couloirs forme un vrai casse-tête.",
-                explanation: "Y au milieu, TH. Du grec 'labyrinthos'."
-            },
-            {
-                word: "langage",
-                phrase: "La façon de s'exprimer varie selon les personnes.",
-                explanation: "Sans U après G. Du latin 'lingua'."
-            },
-            {
-                word: "légume",
-                phrase: "Les carottes et les tomates sont bonnes pour la santé.",
-                explanation: "É accent aigu, pas È. Du latin 'legumen'."
-            },
-            {
-                word: "lieutenant",
-                phrase: "Cet officier seconde le capitaine dans ses fonctions.",
-                explanation: "I-E-U succession complexe. Du français 'lieu tenant'."
-            },
-            {
-                word: "littérature",
-                phrase: "L'ensemble des œuvres écrites forme un patrimoine culturel.",
-                explanation: "Double T, É. Du latin 'litteratura'."
-            },
-            {
-                word: "lycée",
-                phrase: "Les adolescents étudient dans cet établissement scolaire.",
-                explanation: "Y et É accent aigu. Du grec 'lykeion'."
-            },
-            {
-                word: "maintenant",
-                phrase: "Il faut agir à présent, sans plus tarder.",
-                explanation: "A-I, tenant. De main + tenant."
-            },
-            {
-                word: "malgré",
-                phrase: "Il continue en dépit des difficultés rencontrées.",
-                explanation: "Un seul mot, É final. De mal + gré."
-            },
-            {
-                word: "manœuvre",
-                phrase: "Cette opération délicate demande de l'habileté.",
-                explanation: "Œ ligature, sans I. Du latin 'manu opera'."
-            },
-            {
-                word: "médecin",
-                phrase: "Ce professionnel de santé soigne les malades.",
-                explanation: "É, E, pas de I à la fin. Du latin 'medicus'."
-            },
-            {
-                word: "médicament",
-                phrase: "Ce remède permet de soigner la maladie.",
-                explanation: "É accent aigu, A. Du latin 'medicamentum'."
-            },
-            {
-                word: "mieux",
-                phrase: "Cette solution est préférable à l'autre.",
-                explanation: "I-E-U-X, pas de L. Du latin 'melius'."
-            },
-            {
-                word: "millionnaire",
-                phrase: "Cette personne fortunée possède une grande richesse.",
-                explanation: "Double L, double N. De million + -aire."
-            },
-            {
-                word: "miroir",
-                phrase: "Cette surface réfléchissante renvoie l'image.",
-                explanation: "O-I-R à la fin. Du latin 'mirari'."
-            },
-            {
-                word: "monsieur",
-                phrase: "Cet homme est très poli et courtois.",
-                explanation: "O-N sans E entre. Contraction de 'mon sieur'."
-            },
-            {
-                word: "morceau",
-                phrase: "Ce fragment fait partie d'un ensemble plus grand.",
-                explanation: "E-A-U à la fin. Dérivé de mordre."
-            },
-            {
-                word: "mouillé",
-                phrase: "Ses vêtements sont trempés par la pluie.",
-                explanation: "O-U-I, double L. Du verbe mouiller."
-            },
-            {
-                word: "mystère",
-                phrase: "Cette énigme reste inexpliquée jusqu'à présent.",
-                explanation: "Y et È accent grave. Du grec 'mystêrion'."
-            },
-            {
-                word: "naître",
-                phrase: "Le bébé vient au monde à la maternité.",
-                explanation: "Î avec circonflexe. Du latin 'nascere'."
-            },
-            {
-                word: "néanmoins",
-                phrase: "Il persiste malgré tous les obstacles.",
-                explanation: "É-A, un seul mot. De néant + moins."
-            },
-            {
-                word: "neuf",
-                phrase: "Ce produit est tout récent et jamais utilisé.",
-                explanation: "E-U, pas Œ. Du latin 'novus'."
-            },
-            {
-                word: "nœud",
-                phrase: "Cette attache entrelacée maintient la corde.",
-                explanation: "Œ ligature, U-D. Du latin 'nodus'."
-            },
-            {
-                word: "notamment",
-                phrase: "Plusieurs éléments sont concernés, en particulier celui-ci.",
-                explanation: "Double M. De notable + -ment."
-            },
-            {
-                word: "nourriture",
-                phrase: "Les aliments sont essentiels à la survie.",
-                explanation: "Double R. Du verbe nourrir."
-            },
-            {
-                word: "numéro",
-                phrase: "Ce chiffre identifie précisément l'élément.",
-                explanation: "É accent aigu. Du latin 'numerus'."
+                word: "nécessaire",
+                phrase: "Il est indispensable d'avoir ces documents pour voyager.",
+                explanation: "Un C puis double S. Du latin 'necessarius'."
             },
             {
                 word: "oignon",
@@ -727,159 +312,14 @@
                 explanation: "O-I-G-N-O-N. Du latin 'unio'."
             },
             {
-                word: "oiseau",
-                phrase: "Cet animal à plumes vole dans le ciel.",
-                explanation: "O-I-S-E-A-U. Du latin 'aucellus'."
-            },
-            {
-                word: "ophtalmologie",
-                phrase: "Cette spécialité médicale traite les maladies des yeux.",
-                explanation: "P-H-T succession complexe. Du grec 'ophthalmos'."
-            },
-            {
-                word: "opportunité",
-                phrase: "Cette occasion favorable ne se représentera pas.",
-                explanation: "Double P, U. Du latin 'opportunitas'."
-            },
-            {
-                word: "orchestre",
-                phrase: "L'ensemble des musiciens joue en harmonie.",
-                explanation: "C-H, pas QU. Du grec 'orkhêstra'."
-            },
-            {
-                word: "oreille",
-                phrase: "Cet organe permet d'entendre les sons.",
-                explanation: "E-I-double L-E. Du latin 'auricula'."
-            },
-            {
-                word: "orgueil",
-                phrase: "Cette fierté excessive peut devenir un défaut.",
-                explanation: "U-E-I-L comme accueil. Du francique 'urgoli'."
-            },
-            {
-                word: "orthographe",
-                phrase: "L'art d'écrire correctement les mots est important.",
-                explanation: "O-R-T-H-O, PH. Du grec 'orthographia'."
-            },
-            {
-                word: "oublier",
-                phrase: "Sa mémoire lui fait défaut pour ce souvenir.",
-                explanation: "O-U sans E au début. Du latin 'oblitare'."
-            },
-            {
-                word: "oxygène",
-                phrase: "Ce gaz est indispensable à la respiration.",
-                explanation: "O-X-Y avec Y, È. Du grec 'oxys' + 'gennan'."
-            },
-            {
-                word: "paille",
-                phrase: "Ces tiges séchées servent de litière aux animaux.",
-                explanation: "A-I-double L-E. Du latin 'palea'."
-            },
-            {
-                word: "paix",
-                phrase: "L'absence de conflit permet la tranquillité.",
-                explanation: "A-I-X. Du latin 'pax'."
+                word: "parallèle",
+                phrase: "Ces deux lignes ne se croiseront jamais.",
+                explanation: "Double L au milieu. Attention à l'accent grave sur le E."
             },
             {
                 word: "pamplemousse",
                 phrase: "Cet agrume jaune a un goût légèrement amer.",
                 explanation: "A-M sans N. Du néerlandais 'pompelmoes'."
-            },
-            {
-                word: "pantalon",
-                phrase: "Ce vêtement couvre les jambes entièrement.",
-                explanation: "Sans S au singulier. De l'italien 'pantalone'."
-            },
-            {
-                word: "papillon",
-                phrase: "Cet insecte coloré vole de fleur en fleur.",
-                explanation: "Double L. Du latin 'papilio'."
-            },
-            {
-                word: "paquebot",
-                phrase: "Ce grand navire transporte des passagers.",
-                explanation: "Q-U-E, T final. De l'anglais 'packet-boat'."
-            },
-            {
-                word: "paradoxe",
-                phrase: "Cette contradiction apparente défie la logique.",
-                explanation: "X, pas XE. Du grec 'paradoxos'."
-            },
-            {
-                word: "parallèle",
-                phrase: "Ces deux lignes gardent toujours la même distance.",
-                explanation: "Double L, È accent grave. Du grec 'parallêlos'."
-            },
-            {
-                word: "paraître",
-                phrase: "Il semble fatigué mais cache bien son état.",
-                explanation: "Î avec circonflexe. Du latin 'parescere'."
-            },
-            {
-                word: "parcourir",
-                phrase: "Il faut traverser toute la distance prévue.",
-                explanation: "Un seul R après U. Préfixe par- + courir."
-            },
-            {
-                word: "parmi",
-                phrase: "Il se trouve au milieu du groupe.",
-                explanation: "Sans S à la fin. De par + mi."
-            },
-            {
-                word: "parrain",
-                phrase: "Cet homme protège et guide son filleul.",
-                explanation: "Double R. Du latin 'pater'."
-            },
-            {
-                word: "patiemment",
-                phrase: "Il attend avec calme et sans s'énerver.",
-                explanation: "E devant double M. De patient + -ment."
-            },
-            {
-                word: "pays",
-                phrase: "Cette nation a ses propres frontières et lois.",
-                explanation: "Y-S à la fin. Du latin 'pagensis'."
-            },
-            {
-                word: "pêche",
-                phrase: "Cette activité consiste à capturer des poissons.",
-                explanation: "Ê circonflexe. Du latin 'piscari'."
-            },
-            {
-                word: "peigne",
-                phrase: "Cet accessoire sert à démêler les cheveux.",
-                explanation: "E-I-G-N-E. Du latin 'pecten'."
-            },
-            {
-                word: "peinture",
-                phrase: "Cette couche colorée décore et protège les murs.",
-                explanation: "E-I, pas A-I. Du verbe peindre."
-            },
-            {
-                word: "pellicule",
-                phrase: "Cette fine couche recouvre la surface.",
-                explanation: "Double L. Du latin 'pellicula'."
-            },
-            {
-                word: "pendant",
-                phrase: "Durant cette période, tout s'est bien passé.",
-                explanation: "A-N-T, pas E-N-T. Du verbe pendre."
-            },
-            {
-                word: "percevoir",
-                phrase: "Il peut distinguer les nuances subtiles.",
-                explanation: "C devant E. Du latin 'percipere'."
-            },
-            {
-                word: "personne",
-                phrase: "Aucun individu n'est présent dans la salle.",
-                explanation: "Double N. Du latin 'persona'."
-            },
-            {
-                word: "pétiller",
-                phrase: "Les bulles montent dans le champagne.",
-                explanation: "É accent aigu, double L. Origine onomatopéique."
             },
             {
                 word: "pharmacie",
@@ -892,54 +332,9 @@
                 explanation: "P-H au début, È. Du grec 'phainomenon'."
             },
             {
-                word: "philosophie",
-                phrase: "Cette discipline étudie les grandes questions de l'existence.",
-                explanation: "P-H, O, I-E. Du grec 'philosophia'."
-            },
-            {
-                word: "physique",
-                phrase: "Cette science étudie la matière et l'énergie.",
-                explanation: "P-H-Y avec Y. Du grec 'physikê'."
-            },
-            {
-                word: "pièce",
-                phrase: "Cette salle fait partie de l'appartement.",
-                explanation: "I-È avec accent grave. Du gaulois 'pettia'."
-            },
-            {
-                word: "piqûre",
-                phrase: "Cette injection médicale peut être douloureuse.",
-                explanation: "Û avec circonflexe. Du verbe piquer."
-            },
-            {
-                word: "plaindre",
-                phrase: "Il faut avoir de la compassion pour les malheureux.",
-                explanation: "A-I-N, pas E-I-N. Du latin 'plangere'."
-            },
-            {
-                word: "plaisir",
-                phrase: "Cette sensation agréable procure du bonheur.",
-                explanation: "A-I, pas E. Du latin 'placere'."
-            },
-            {
-                word: "plupart",
-                phrase: "La majorité des gens pensent ainsi.",
-                explanation: "Un seul mot, T muet. De plus + part."
-            },
-            {
-                word: "plusieurs",
-                phrase: "Un nombre important mais indéterminé d'éléments.",
-                explanation: "I-E-U-R-S. Du latin 'plures'."
-            },
-            {
                 word: "pneumonie",
                 phrase: "Cette infection pulmonaire nécessite des antibiotiques.",
                 explanation: "P-N au début, EU. Du grec 'pneumonia'."
-            },
-            {
-                word: "poids",
-                phrase: "La masse de cet objet est considérable.",
-                explanation: "O-I-D-S. Du latin 'pensum'."
             },
             {
                 word: "poignée",
@@ -947,219 +342,9 @@
                 explanation: "O-I-G-N-É-E. Du verbe poigner."
             },
             {
-                word: "poing",
-                phrase: "La main fermée forme cette partie du corps.",
-                explanation: "O-I-N-G. Du latin 'pugnus'."
-            },
-            {
-                word: "point",
-                phrase: "Cette marque termine la phrase écrite.",
-                explanation: "O-I-N-T. Du latin 'punctum'."
-            },
-            {
-                word: "poison",
-                phrase: "Cette substance toxique peut être mortelle.",
-                explanation: "O-I, pas OI-S-S. Du latin 'potio'."
-            },
-            {
-                word: "poitrine",
-                phrase: "Cette partie du torse contient le cœur.",
-                explanation: "O-I, pas O-I-C. Du latin 'pectorina'."
-            },
-            {
-                word: "pollution",
-                phrase: "La contamination de l'environnement est préoccupante.",
-                explanation: "Double L. Du verbe polluer."
-            },
-            {
-                word: "pomme de terre",
-                phrase: "Ce tubercule est un aliment de base.",
-                explanation: "Trois mots séparés. Calque de l'allemand."
-            },
-            {
-                word: "ponctuel",
-                phrase: "Cette personne arrive toujours à l'heure prévue.",
-                explanation: "C-T-U. Du latin 'punctualis'."
-            },
-            {
-                word: "portefeuille",
-                phrase: "Cet accessoire contient argent et papiers.",
-                explanation: "Un seul mot, E-U-I. De porter + feuille."
-            },
-            {
-                word: "portrait",
-                phrase: "Cette représentation montre le visage d'une personne.",
-                explanation: "T muet final. Du verbe portraire."
-            },
-            {
-                word: "possibilité",
-                phrase: "Cette éventualité pourrait se réaliser.",
-                explanation: "Double S. Du latin 'possibilitas'."
-            },
-            {
-                word: "poubelle",
-                phrase: "Les déchets sont jetés dans ce récipient.",
-                explanation: "Un seul L. Du préfet Poubelle."
-            },
-            {
-                word: "pourquoi",
-                phrase: "La raison de cette décision reste mystérieuse.",
-                explanation: "Un seul mot. De pour + quoi."
-            },
-            {
-                word: "pourtant",
-                phrase: "Malgré cela, il continue ses efforts.",
-                explanation: "Un seul mot. De pour + tant."
-            },
-            {
-                word: "pouvoir",
-                phrase: "La capacité d'agir est importante.",
-                explanation: "O-U-V-O-I-R. Du latin 'potere'."
-            },
-            {
-                word: "précédemment",
-                phrase: "Cela s'est passé avant l'événement actuel.",
-                explanation: "É-C-É, double M. De précédent + -ment."
-            },
-            {
-                word: "précieux",
-                phrase: "Ce bijou a une grande valeur sentimentale.",
-                explanation: "É-C-I. Du latin 'pretiosus'."
-            },
-            {
-                word: "préférer",
-                phrase: "Il aime mieux cette option que l'autre.",
-                explanation: "É accent aigu trois fois. Du latin 'praeferre'."
-            },
-            {
-                word: "préjugé",
-                phrase: "Cette opinion formée sans réflexion est dangereuse.",
-                explanation: "É accent aigu, pas U-D-G. De pré- + jugé."
-            },
-            {
-                word: "prémices",
-                phrase: "Les premiers signes annoncent le changement.",
-                explanation: "É-M-I, toujours pluriel. Du latin 'primitiae'."
-            },
-            {
-                word: "près",
-                phrase: "Il se trouve à proximité immédiate du lieu.",
-                explanation: "È accent grave, S muet. Du latin 'pressus'."
-            },
-            {
-                word: "presqu'île",
-                phrase: "Cette terre est entourée d'eau sur trois côtés.",
-                explanation: "Apostrophe, Î. De presque + île."
-            },
-            {
-                word: "prêt",
-                phrase: "Il est disposé à partir immédiatement.",
-                explanation: "Ê circonflexe, T. Du latin 'praestus'."
-            },
-            {
-                word: "printemps",
-                phrase: "Cette saison suit l'hiver et précède l'été.",
-                explanation: "P-S à la fin. Du latin 'primus tempus'."
-            },
-            {
-                word: "privilège",
-                phrase: "Cet avantage exclusif n'est pas accordé à tous.",
-                explanation: "I après V, È. Du latin 'privilegium'."
-            },
-            {
-                word: "problème",
-                phrase: "Cette difficulté demande une solution rapide.",
-                explanation: "È accent grave. Du grec 'problêma'."
-            },
-            {
-                word: "procédure",
-                phrase: "Cette méthode suit des étapes précises.",
-                explanation: "É accent aigu. Du latin 'procedere'."
-            },
-            {
-                word: "professeur",
-                phrase: "Cet enseignant transmet son savoir aux élèves.",
-                explanation: "Un seul F, double S. Du latin 'professor'."
-            },
-            {
-                word: "professionnel",
-                phrase: "Ce spécialiste exerce son métier avec compétence.",
-                explanation: "Un seul F, double S, double N. De profession."
-            },
-            {
-                word: "programme",
-                phrase: "Le planning des activités est affiché.",
-                explanation: "Double M. Du grec 'programma'."
-            },
-            {
-                word: "promener",
-                phrase: "Il aime marcher tranquillement dans le parc.",
-                explanation: "Un seul M, E sans accent. Du latin 'prominare'."
-            },
-            {
-                word: "promettre",
-                phrase: "Il s'engage à tenir sa parole.",
-                explanation: "Un seul M, double T. Du latin 'promittere'."
-            },
-            {
-                word: "prophète",
-                phrase: "Ce messager divin annonce l'avenir.",
-                explanation: "P-H, È. Du grec 'prophêtês'."
-            },
-            {
-                word: "propriétaire",
-                phrase: "Cette personne possède le bien immobilier.",
-                explanation: "I-É-T-A-I-R-E. Du latin 'proprietarius'."
-            },
-            {
-                word: "protéger",
-                phrase: "Il faut défendre les plus vulnérables.",
-                explanation: "É accent aigu, G devant E. Du latin 'protegere'."
-            },
-            {
-                word: "psychologie",
-                phrase: "Cette science étudie le comportement humain.",
-                explanation: "P-S-Y, CH. Du grec 'psychologia'."
-            },
-            {
-                word: "public",
-                phrase: "L'audience assiste au spectacle.",
-                explanation: "C final, pas -QUE. Du latin 'publicus'."
-            },
-            {
-                word: "puisque",
-                phrase: "Étant donné cette raison, la conclusion s'impose.",
-                explanation: "Un seul mot. De puis + que."
-            },
-            {
-                word: "pull-over",
-                phrase: "Ce vêtement chaud se porte sur le torse.",
-                explanation: "Trait d'union, double L. De l'anglais."
-            },
-            {
-                word: "punir",
-                phrase: "Il faut sanctionner les mauvais comportements.",
-                explanation: "Un seul N. Du latin 'punire'."
-            },
-            {
-                word: "quand",
-                phrase: "À quel moment cela va-t-il se produire ?",
-                explanation: "Q-U-A-N-D avec D. Du latin 'quando'."
-            },
-            {
-                word: "quarante",
-                phrase: "Ce nombre suit trente-neuf.",
-                explanation: "Sans U après Q. Du latin 'quadraginta'."
-            },
-            {
-                word: "quatorze",
-                phrase: "Ce nombre suit treize.",
-                explanation: "Sans U après Q. Du latin 'quattuordecim'."
-            },
-            {
-                word: "quatre",
-                phrase: "Ce chiffre suit trois.",
-                explanation: "Sans U après Q. Du latin 'quattuor'."
+                word: "psychiatre",
+                phrase: "Ce médecin spécialiste soigne les troubles mentaux.",
+                explanation: "P-S-Y au début, CH. Du grec 'psychê' + 'iatros'."
             },
             {
                 word: "quatre-vingt-dix",
@@ -1167,154 +352,14 @@
                 explanation: "Traits d'union, pas de S à vingt."
             },
             {
-                word: "quatre-vingts",
-                phrase: "Ce nombre suit soixante-dix-neuf.",
-                explanation: "Trait d'union, S à vingts."
-            },
-            {
-                word: "quelque",
-                phrase: "Un certain nombre indéterminé d'éléments.",
-                explanation: "Un seul mot devant un nom. De quel + que."
-            },
-            {
-                word: "quelquefois",
-                phrase: "Cela arrive de temps en temps.",
-                explanation: "Un seul mot. De quelque + fois."
-            },
-            {
-                word: "quelqu'un",
-                phrase: "Une personne non identifiée est présente.",
-                explanation: "Apostrophe obligatoire. De quelque + un."
-            },
-            {
                 word: "questionnaire",
                 phrase: "Ce formulaire contient plusieurs interrogations.",
                 explanation: "Double N. De question + -aire."
             },
             {
-                word: "queue",
-                phrase: "Cette file d'attente est très longue.",
-                explanation: "Q-U-E-U-E. Du latin 'cauda'."
-            },
-            {
-                word: "quiconque",
-                phrase: "N'importe quelle personne peut participer.",
-                explanation: "Un seul mot. Du latin 'quicumque'."
-            },
-            {
-                word: "quinze",
-                phrase: "Ce nombre suit quatorze.",
-                explanation: "Z-E à la fin. Du latin 'quindecim'."
-            },
-            {
-                word: "quitter",
-                phrase: "Il doit partir et abandonner ce lieu.",
-                explanation: "Double T. Du latin 'quietare'."
-            },
-            {
-                word: "quoique",
-                phrase: "Bien que cela soit difficile, il persévère.",
-                explanation: "Un seul mot, conjonction. De quoi + que."
-            },
-            {
-                word: "quotidien",
-                phrase: "Cela se produit chaque jour sans exception.",
-                explanation: "Q-U-O-T, I-E-N. Du latin 'quotidianus'."
-            },
-            {
-                word: "raccourci",
-                phrase: "Ce chemin plus court fait gagner du temps.",
-                explanation: "Double C, I final. De raccourcir."
-            },
-            {
-                word: "racine",
-                phrase: "Cette partie de la plante puise l'eau du sol.",
-                explanation: "Un seul C. Du latin 'radix'."
-            },
-            {
-                word: "raconter",
-                phrase: "Il aime narrer des histoires captivantes.",
-                explanation: "Un seul C. Préfixe ra- + conter."
-            },
-            {
-                word: "rafraîchir",
-                phrase: "Cette boisson froide fait du bien par cette chaleur.",
-                explanation: "Un seul F, Î. De rafraîchir."
-            },
-            {
-                word: "raisin",
-                phrase: "Ces fruits poussent en grappes sur la vigne.",
-                explanation: "A-I, pas E. Du latin 'racemus'."
-            },
-            {
-                word: "raison",
-                phrase: "La logique guide cette décision réfléchie.",
-                explanation: "A-I, pas E. Du latin 'ratio'."
-            },
-            {
-                word: "rallonge",
-                phrase: "Ce câble supplémentaire augmente la portée.",
-                explanation: "Double L. De rallonger."
-            },
-            {
-                word: "ramasser",
-                phrase: "Il faut collecter les objets éparpillés.",
-                explanation: "Un seul M, double S. Origine incertaine."
-            },
-            {
-                word: "rang",
-                phrase: "Sa position dans la file est bien définie.",
-                explanation: "G muet final. Du francique 'hring'."
-            },
-            {
-                word: "rappeler",
-                phrase: "Il faut téléphoner à nouveau pour confirmer.",
-                explanation: "Double P. Préfixe ra- + appeler."
-            },
-            {
-                word: "rapport",
-                phrase: "Ce document détaille les résultats de l'enquête.",
-                explanation: "Double P. Du verbe rapporter."
-            },
-            {
-                word: "rassembler",
-                phrase: "Il faut réunir tous les participants.",
-                explanation: "Double S. Préfixe ra- + assembler."
-            },
-            {
-                word: "rattraper",
-                phrase: "Il court pour rejoindre le groupe parti devant.",
-                explanation: "Double T. Préfixe ra- + attraper."
-            },
-            {
-                word: "recevoir",
-                phrase: "Le colis devrait arriver demain matin.",
-                explanation: "C devant E. Du latin 'recipere'."
-            },
-            {
-                word: "récemment",
-                phrase: "Cela s'est produit il y a peu de temps.",
-                explanation: "É accent aigu, double M. De récent + -ment."
-            },
-            {
-                word: "recherche",
-                phrase: "Cette investigation vise à découvrir la vérité.",
-                explanation: "Un seul C après E. De rechercher."
-            },
-            {
-                word: "récipient",
-                phrase: "Ce contenant peut stocker des liquides.",
-                explanation: "É-C-I. Du latin 'recipiens'."
-            },
-            {
-                word: "réclamer",
-                phrase: "Il exige ce qui lui est dû de droit.",
-                explanation: "É accent aigu. Du latin 'reclamare'."
-            },
-            {
-                word: "recommander",
-                phrase: "Le médecin conseille vivement ce traitement.",
-                explanation: "E-C-O, double M. Préfixe re- + commander."
+                word: "quincaillerie",
+                phrase: "Ce magasin vend des outils et des vis.",
+                explanation: "Q-U-I-N-C-A-I, double L. De quincaille."
             },
             {
                 word: "reconnaissance",
@@ -1322,238 +367,367 @@
                 explanation: "E-C-O, double N, double S. De reconnaître."
             },
             {
-                word: "reconnaître",
-                phrase: "Il identifie facilement cette personne familière.",
-                explanation: "E-C-O, double N, Î. Préfixe re- + connaître."
+                word: "rhumatisme",
+                phrase: "Ces douleurs articulaires handicapent les mouvements.",
+                explanation: "R-H-U au début. Du grec 'rheumatismos'."
             },
             {
-                word: "recueil",
-                phrase: "Ce livre rassemble plusieurs textes choisis.",
-                explanation: "U-E-I-L comme accueil. De recueillir."
+                word: "rhododendron",
+                phrase: "Cet arbuste produit de belles fleurs colorées.",
+                explanation: "R-H-O deux fois. Du grec 'rhododendron'."
             },
             {
-                word: "récupérer",
-                phrase: "Il faut reprendre ce qui nous appartient.",
-                explanation: "É-C-U, É. Du latin 'recuperare'."
+                word: "rythme",
+                phrase: "La cadence régulière structure la musique.",
+                explanation: "R-Y-T-H-M-E. Du grec 'rhythmos'."
             },
             {
-                word: "rédiger",
-                phrase: "Il faut écrire ce rapport avant demain.",
-                explanation: "É accent aigu, G devant E. Du latin 'redigere'."
+                word: "schéma",
+                phrase: "Ce dessin simplifié représente l'essentiel.",
+                explanation: "S-C-H, É. Du grec 'skhêma'."
             },
             {
-                word: "réellement",
-                phrase: "C'est vraiment arrivé, sans aucun doute.",
-                explanation: "É-E, double L. De réel + -ment."
+                word: "sceptique",
+                phrase: "Cette personne doute de tout systématiquement.",
+                explanation: "S-C-E-P. Du grec 'skeptikos'."
             },
             {
-                word: "référence",
-                phrase: "Cette mention renvoie à un autre document.",
-                explanation: "É accent aigu, un seul F. Du latin 'referre'."
+                word: "sculpture",
+                phrase: "Cette œuvre d'art est taillée dans la pierre.",
+                explanation: "S-C-U-L-P. Du latin 'sculptura'."
             },
             {
-                word: "réfléchir",
-                phrase: "Il faut bien penser avant d'agir.",
-                explanation: "É accent aigu, É. Du latin 'reflectere'."
+                word: "silhouette",
+                phrase: "Cette forme sombre se découpe sur le ciel.",
+                explanation: "H après L, O-U-E. De Étienne de Silhouette."
             },
             {
-                word: "reflet",
-                phrase: "L'image se forme sur la surface de l'eau.",
-                explanation: "T muet final. De refléter."
+                word: "sœur",
+                phrase: "Cette fille a les mêmes parents que lui.",
+                explanation: "Œ ligature. Du latin 'soror'."
             },
             {
-                word: "réfrigérateur",
-                phrase: "Cet appareil conserve les aliments au frais.",
-                explanation: "É trois fois, É-R-A. Du latin 'refrigerare'."
+                word: "solennel",
+                phrase: "Cette cérémonie officielle impressionne.",
+                explanation: "E-N-N-E-L. Du latin 'sollemnis'."
             },
             {
-                word: "refuser",
-                phrase: "Il décline poliment cette proposition.",
-                explanation: "Un seul F. Du latin 'refusare'."
+                word: "suggérer",
+                phrase: "Il propose discrètement cette idée.",
+                explanation: "Double G, É. Du latin 'suggerere'."
             },
             {
-                word: "regarder",
-                phrase: "Il observe attentivement la scène.",
-                explanation: "E sans accent. De re- + garder."
+                word: "sympathie",
+                phrase: "Cette affinité crée des liens affectifs.",
+                explanation: "Y-M-P-A-T-H. Du grec 'sympatheia'."
             },
             {
-                word: "règle",
-                phrase: "Cette norme doit être respectée par tous.",
-                explanation: "È accent grave. Du latin 'regula'."
+                word: "symptôme",
+                phrase: "Ce signe révèle la présence d'une maladie.",
+                explanation: "Y-M-P-T-Ô. Du grec 'symptôma'."
             },
             {
-                word: "règlement",
-                phrase: "Ces directives organisent la vie collective.",
-                explanation: "È accent grave. De régler + -ment."
+                word: "synthèse",
+                phrase: "Ce résumé rassemble les idées essentielles.",
+                explanation: "Y-N-T-H, È. Du grec 'synthesis'."
             },
             {
-                word: "regretter",
-                phrase: "Il éprouve du remords pour cette erreur.",
-                explanation: "E, double T. Du français ancien 'regreter'."
+                word: "système",
+                phrase: "Cet ensemble organisé fonctionne selon des règles.",
+                explanation: "Y-S-T, È. Du grec 'systêma'."
             },
             {
-                word: "régulièrement",
-                phrase: "Cela se produit à intervalles constants.",
-                explanation: "É-G-U, È. De régulier + -ment."
+                word: "théâtre",
+                phrase: "Ce lieu accueille les représentations dramatiques.",
+                explanation: "T-H-É-Â. Du grec 'theatron'."
             },
             {
-                word: "reine",
-                phrase: "Cette souveraine dirige le royaume.",
-                explanation: "E-I, pas A-I. Du latin 'regina'."
+                word: "tranquille",
+                phrase: "Ce calme paisible apaise les nerfs.",
+                explanation: "A-N-Q-U, double L. Du latin 'tranquillus'."
             },
             {
-                word: "rejeter",
-                phrase: "Il refuse catégoriquement cette idée.",
-                explanation: "Un seul T au milieu. Préfixe re- + jeter."
+                word: "vraiment",
+                phrase: "Cette affirmation confirme la vérité.",
+                explanation: "A-I. De vrai + -ment."
             },
             {
-                word: "rejoindre",
-                phrase: "Il faut retrouver les autres au point de rencontre.",
-                explanation: "O-I-N sans G. Préfixe re- + joindre."
+                word: "xylophone",
+                phrase: "Cet instrument produit des sons en frappant des lames.",
+                explanation: "X-Y-L-O. Du grec 'xylon' + 'phônê'."
             },
             {
-                word: "relais",
-                phrase: "Cette étape intermédiaire permet de continuer.",
-                explanation: "A-I-S. Du verbe relayer."
+                word: "yacht",
+                phrase: "Ce bateau de plaisance navigue luxueusement.",
+                explanation: "Y-A-C-H-T. Du néerlandais 'jacht'."
             },
             {
-                word: "religieux",
-                phrase: "Cette personne consacre sa vie à la foi.",
-                explanation: "I-G-I. Du latin 'religiosus'."
+                word: "zénith",
+                phrase: "Ce point culminant marque le plus haut du ciel.",
+                explanation: "É accent aigu, T-H. De l'arabe 'samt'."
             },
             {
-                word: "remarquer",
-                phrase: "Il note ce détail important.",
-                explanation: "E sans accent. Préfixe re- + marquer."
+                word: "adéquat",
+                phrase: "Cette solution convient parfaitement à la situation.",
+                explanation: "D-É-Q-U-A-T. Du latin 'adaequatus'."
             },
             {
-                word: "remède",
-                phrase: "Ce traitement guérit efficacement la maladie.",
-                explanation: "È accent grave. Du latin 'remedium'."
+                word: "adhérence",
+                phrase: "Cette propriété permet aux pneus de tenir la route.",
+                explanation: "D-H-É. Du latin 'adhaerentia'."
             },
             {
-                word: "remercier",
-                phrase: "Il exprime sa gratitude sincèrement.",
-                explanation: "C-I devant E. Préfixe re- + mercier."
+                word: "aérien",
+                phrase: "Ce transport par les airs est rapide.",
+                explanation: "A-É, I-E-N. Du latin 'aerius'."
             },
             {
-                word: "remettre",
-                phrase: "Il faut donner ce document en mains propres.",
-                explanation: "Un seul M, double T. Préfixe re- + mettre."
+                word: "aiguille",
+                phrase: "Cet objet pointu sert à coudre.",
+                explanation: "A-I-G-U-I, double L. Du latin 'acicula'."
             },
             {
-                word: "remplir",
-                phrase: "Il faut compléter entièrement le récipient.",
-                explanation: "E-M sans A. Préfixe re- + emplir."
+                word: "ailleurs",
+                phrase: "Dans un autre endroit, pas ici.",
+                explanation: "A-I, double L, E-U-R-S. Du latin 'aliore'."
             },
             {
-                word: "rencontrer",
-                phrase: "Il croise cette personne par hasard.",
-                explanation: "E-N-C-O-N. Préfixe re- + encontrer."
+                word: "allégresse",
+                phrase: "Cette joie exubérante éclate partout.",
+                explanation: "Double L, É-G-R. Du latin 'alacritas'."
             },
             {
-                word: "rendez-vous",
-                phrase: "Cette rencontre est prévue à quinze heures.",
-                explanation: "Trait d'union, Z muet. De se rendre."
+                word: "almanach",
+                phrase: "Ce calendrier détaillé indique les fêtes.",
+                explanation: "L-M-A-N-A-C-H. De l'arabe 'al-manakh'."
             },
             {
-                word: "rendre",
-                phrase: "Il faut restituer ce qui a été emprunté.",
-                explanation: "E-N sans A. Du latin 'reddere'."
+                word: "ambiguïté",
+                phrase: "Ce double sens crée la confusion.",
+                explanation: "A-M-B-I-G-U-Ï. Du latin 'ambiguitas'."
             },
             {
-                word: "renoncer",
-                phrase: "Il abandonne définitivement ce projet.",
-                explanation: "Un seul N après O. Du latin 'renuntiare'."
+                word: "amiante",
+                phrase: "Ce minéral fibreux pose des problèmes de santé.",
+                explanation: "A-M-I-A-N-T-E. Du grec 'amiantos'."
             },
             {
-                word: "renouveler",
-                phrase: "Il faut remplacer l'ancien par du neuf.",
-                explanation: "Un seul L. Préfixe re- + nouveler."
+                word: "amnésie",
+                phrase: "Cette perte de mémoire efface les souvenirs.",
+                explanation: "A-M-N-É-S. Du grec 'amnêsia'."
             },
             {
-                word: "renseignement",
-                phrase: "Cette information précieuse aide à comprendre.",
-                explanation: "E-I-G-N. De renseigner + -ment."
+                word: "amphithéâtre",
+                phrase: "Cette salle en gradins accueille les spectateurs.",
+                explanation: "A-M-P-H-I, T-H-É-Â. Du grec 'amphitheatron'."
             },
             {
-                word: "rentrer",
-                phrase: "Il faut revenir à la maison maintenant.",
-                explanation: "E-N sans A. Préfixe re- + entrer."
+                word: "amygdale",
+                phrase: "Cet organe de la gorge peut s'infecter.",
+                explanation: "A-M-Y-G-D-A-L-E. Du grec 'amygdalê'."
             },
             {
-                word: "renvoyer",
-                phrase: "Il faut retourner ce colis à l'expéditeur.",
-                explanation: "E-N sans A, Y. Préfixe re- + envoyer."
+                word: "anachronisme",
+                phrase: "Cette erreur de datation place mal dans le temps.",
+                explanation: "A-N-A-C-H-R-O. Du grec 'ana' + 'khronos'."
             },
             {
-                word: "répandre",
-                phrase: "Le liquide se disperse sur toute la surface.",
-                explanation: "É accent aigu, A-N. Du latin 'expandere'."
+                word: "apercevoir",
+                phrase: "Il distingue vaguement une forme au loin.",
+                explanation: "Un seul P, C devant E. Du latin 'percipere'."
             },
             {
-                word: "répartir",
-                phrase: "Il faut distribuer équitablement les ressources.",
-                explanation: "É accent aigu. Préfixe ré- + partir."
+                word: "apparemment",
+                phrase: "Selon toute vraisemblance, c'est ainsi.",
+                explanation: "Double P, A-R-E, double M. De apparent + -ment."
             },
             {
-                word: "repas",
-                phrase: "Ce moment de la journée permet de se nourrir.",
-                explanation: "S muet final. Du latin 'repascere'."
+                word: "asphyxie",
+                phrase: "Le manque d'oxygène empêche de respirer.",
+                explanation: "A-S-P-H-Y-X. Du grec 'asphyxia'."
             },
             {
-                word: "repère",
-                phrase: "Ce point de référence aide à s'orienter.",
-                explanation: "È accent grave. De repérer."
+                word: "asthme",
+                phrase: "Cette maladie respiratoire gêne la respiration.",
+                explanation: "S-T-H-M-E. Du grec 'asthma'."
             },
             {
-                word: "répéter",
-                phrase: "Il faut dire plusieurs fois la même chose.",
-                explanation: "É accent aigu trois fois. Du latin 'repetere'."
+                word: "asymétrie",
+                phrase: "Ce déséquilibre rompt l'harmonie des formes.",
+                explanation: "A-S-Y-M-É. Du grec 'asymmetria'."
             },
             {
-                word: "répondre",
-                phrase: "Il faut donner une solution à cette question.",
-                explanation: "É accent aigu. Du latin 'respondere'."
+                word: "atmosphère",
+                phrase: "Cette couche d'air entoure la Terre.",
+                explanation: "A-T-M-O-S-P-H. Du grec 'atmos' + 'sphaira'."
             },
             {
-                word: "repos",
-                phrase: "Ce temps de détente est nécessaire.",
-                explanation: "S muet final. De reposer."
+                word: "atterrir",
+                phrase: "L'avion se pose enfin sur la piste.",
+                explanation: "Double T, double R. De terre."
             },
             {
-                word: "représenter",
-                phrase: "Cette image symbolise parfaitement l'idée.",
-                explanation: "É accent aigu deux fois. Du latin 'repraesentare'."
+                word: "auparavant",
+                phrase: "Avant cela, les choses étaient différentes.",
+                explanation: "Un seul mot. De au + par + avant."
             },
             {
-                word: "requin",
-                phrase: "Ce prédateur marin impressionne par sa taille.",
-                explanation: "Q-U-I-N. Origine normande."
+                word: "aujourd'hui",
+                phrase: "En ce jour présent, maintenant.",
+                explanation: "Apostrophe obligatoire. De au + jour + de + hui."
             },
             {
-                word: "réseau",
-                phrase: "Ce système interconnecté facilite les échanges.",
-                explanation: "É accent aigu, E-A-U. Du latin 'rete'."
+                word: "authentique",
+                phrase: "Ce document original n'est pas une copie.",
+                explanation: "A-U-T-H-E-N. Du grec 'authentikos'."
             },
             {
-                word: "réserver",
-                phrase: "Il faut garder cette place pour plus tard.",
-                explanation: "É accent aigu. Du latin 'reservare'."
+                word: "bienveillant",
+                phrase: "Cette personne généreuse montre de la bonté.",
+                explanation: "I-E-N, E-I, double L. De bien + veillant."
             },
             {
-                word: "résidence",
-                phrase: "Ce lieu d'habitation est très confortable.",
-                explanation: "É accent aigu, E-N-C-E. Du latin 'residentia'."
+                word: "chœur",
+                phrase: "Ce groupe de chanteurs interprète ensemble.",
+                explanation: "C-H-Œ ligature. Du grec 'khoros'."
             },
             {
-                word: "résister",
-                phrase: "Il faut tenir bon face à l'adversité.",
-                explanation: "É accent aigu. Du latin 'resistere'."
+                word: "chrysanthème",
+                phrase: "Cette fleur d'automne orne les tombes.",
+                explanation: "C-H-R-Y-S, T-H. Du grec 'khrusos' + 'anthemon'."
             },
             {
-                word: "résoudre",
-                phrase: "Il faut trouver la solution à ce problème.",
-                explanation: "É accent aigu, O-U. Du latin 'resolvere'."
+                word: "circonférence",
+                phrase: "Le périmètre du cercle mesure cette longueur.",
+                explanation: "C-I-R-C-O-N-F-É. Du latin 'circumferentia'."
             },
             {
+                word: "conscient",
+                phrase: "Cette personne éveillée perçoit ce qui l'entoure.",
+                explanation: "S-C-I-E-N-T. Du latin 'conscientia'."
+            },
+            {
+                word: "cueillette",
+                phrase: "La récolte des fruits mûrs commence.",
+                explanation: "U-E-I, double T. De cueillir."
+            }
+        ];
+
+        let currentWords = [];
+        let currentWordIndex = 0;
+        let score = 0;
+        let totalWords = 20; // Nombre de mots par partie
+
+        function shuffleArray(array) {
+            const newArray = [...array];
+            for (let i = newArray.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+            }
+            return newArray;
+        }
+
+        function startGame() {
+            currentWords = shuffleArray(wordsDatabase).slice(0, totalWords);
+            currentWordIndex = 0;
+            score = 0;
+            document.getElementById('score').textContent = '0';
+            document.getElementById('total').textContent = '0';
+            document.getElementById('game-screen').style.display = 'block';
+            document.getElementById('end-screen').style.display = 'none';
+            loadWord();
+        }
+
+        function loadWord() {
+            if (currentWordIndex < totalWords) {
+                const wordData = currentWords[currentWordIndex];
+                document.getElementById('phrase').textContent = wordData.phrase;
+                document.getElementById('answer').value = '';
+                document.getElementById('answer').focus();
+                document.getElementById('feedback').innerHTML = '';
+                document.getElementById('submit-btn').disabled = false;
+            } else {
+                endGame();
+            }
+        }
+
+        function checkAnswer() {
+            const userAnswer = document.getElementById('answer').value.trim().toLowerCase();
+            const correctAnswer = currentWords[currentWordIndex].word.toLowerCase();
+            const feedbackDiv = document.getElementById('feedback');
+            
+            document.getElementById('submit-btn').disabled = true;
+            
+            if (userAnswer === correctAnswer) {
+                score++;
+                feedbackDiv.className = 'feedback correct';
+                feedbackDiv.innerHTML = `
+                    <h3>✅ Excellent !</h3>
+                    <div class="correct-word">${currentWords[currentWordIndex].word}</div>
+                    <div class="explanation">${currentWords[currentWordIndex].explanation}</div>
+                `;
+            } else {
+                feedbackDiv.className = 'feedback incorrect';
+                feedbackDiv.innerHTML = `
+                    <h3>❌ Pas tout à fait...</h3>
+                    <div>Vous avez écrit : <strong>${userAnswer}</strong></div>
+                    <div class="correct-word">Réponse : ${currentWords[currentWordIndex].word}</div>
+                    <div class="explanation">${currentWords[currentWordIndex].explanation}</div>
+                `;
+            }
+            
+            document.getElementById('score').textContent = score;
+            document.getElementById('total').textContent = currentWordIndex + 1;
+            
+            setTimeout(() => {
+                currentWordIndex++;
+                loadWord();
+            }, 3500);
+        }
+
+        function endGame() {
+            document.getElementById('game-screen').style.display = 'none';
+            document.getElementById('end-screen').style.display = 'block';
+            
+            const percentage = (score / totalWords) * 100;
+            document.getElementById('final-score').textContent = `${score} / ${totalWords}`;
+            
+            let emoji, message;
+            
+            if (percentage === 100) {
+                emoji = '🏆';
+                message = "Parfait ! Vous êtes un champion de l'orthographe !";
+            } else if (percentage >= 80) {
+                emoji = '🌟';
+                message = "Excellent travail ! Vous maîtrisez très bien l'orthographe.";
+            } else if (percentage >= 60) {
+                emoji = '👍';
+                message = "Bon résultat ! Continuez à vous entraîner.";
+            } else if (percentage >= 40) {
+                emoji = '💪';
+                message = "Pas mal ! Avec de la pratique, vous progresserez vite.";
+            } else {
+                emoji = '📚';
+                message = "Courage ! L'orthographe s'apprend avec la pratique.";
+            }
+            
+            document.getElementById('emoji').textContent = emoji;
+            document.getElementById('message').textContent = message;
+        }
+
+        function restartGame() {
+            startGame();
+        }
+
+        // Gestion de la touche Entrée
+        document.getElementById('answer').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter' && !document.getElementById('submit-btn').disabled) {
+                checkAnswer();
+            }
+        });
+
+        // Démarrage du jeu
+        startGame();
+    </script>
+</body>
+</html>
